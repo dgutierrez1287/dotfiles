@@ -93,6 +93,7 @@ Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
 
 " Go
 Plug 'neoclide/coc-go', {'do': 'yarn install --frozen-lockfile'}
+Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
 
 " bash
 Plug 'neoclide/coc-sh', {'do': 'yarn install --frozen-lockfile'}
