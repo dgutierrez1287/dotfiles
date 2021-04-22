@@ -73,6 +73,7 @@ Plug 'w0rp/ale'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'jiangmiao/auto-pairs'
 Plug 'lambdalisue/vim-pyenv'
+Plug 'junegunn/vim-slash'
 
 " Macros and Snippets
 Plug 'chamindra/marvim'
