@@ -107,6 +107,7 @@ alias powershell.exe="/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.
 alias vim="nvim"
 alias vi="nvim"
 alias tf="terraform"
+alias tg="terragrunt"
 alias d="docker"
 alias dc="docker-compose"
 alias awslocal="aws --endpoint-url=http://localhost:4566 --profile=local --region=us-east-1"
