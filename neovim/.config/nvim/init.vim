@@ -8,6 +8,7 @@ let mapleader = " "
 syntax on
 set incsearch
 set scrolloff=8
+set termguicolors
 
 " swap undo backup
 set noswapfile
@@ -47,9 +48,6 @@ highlight ColorColumn ctermbg=0 guibg=brown
 let g:python_host_prog = '/home/diego/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/home/diego/.pyenv/versions/neovim3/bin/python3'
 
-" autocomplete
-
-
 " plugins install
 call plug#begin()
 
@@ -62,6 +60,7 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'SirVer/ultisnips'
 Plug 'fhill2/telescope-ultisnips.nvim', {'branch': 'main'}
 Plug 'honza/vim-snippets'
+Plug 'cwood/ultisnips-terraform-snippets'
 
 " file operations
 Plug 'scrooloose/nerdtree'
@@ -73,6 +72,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" language stuff
+Plug 'hashivim/vim-terraform'
 
 " motion
 Plug 'christoomey/vim-tmux-navigator'
@@ -109,3 +111,4 @@ source ~/.config/nvim/config/vim-commentary.vim
 source ~/.config/nvim/config/lsp.vim
 source ~/.config/nvim/config/autopair.vim
 source ~/.config/nvim/config/snippets.vim
+source ~/.config/nvim/config/vim-terraform.vim
