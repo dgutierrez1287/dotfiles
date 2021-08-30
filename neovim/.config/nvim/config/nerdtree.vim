@@ -9,7 +9,7 @@ augroup nerdtree_cmds
 augroup END
 
 " toggle 
-nnoremap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <Leader>nt :NERDTreeToggle<Enter>
 
 " clean up buffers when delete file
 let NERDTreeAutoDeleteBuffer = 1
