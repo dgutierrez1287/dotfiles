@@ -1,10 +1,10 @@
 " new terminal
-nnoremap <silent><Leader>ft :FloatermNew <CR>
+nnoremap <silent> <Leader>f :FloatermNew<CR>
 " noremap! <silent><leader>ft  <Esc>:FloatermNew<CR>
 tnoremap <silent><c-f>  <C-\><C-n>:FloatermNew<CR>
 
 " toggle
-nnoremap  <silent><leader>t  :FloatermToggle<CR>
+nnoremap  <silent> <leader>t :FloatermToggle<CR>
 " noremap! <silent><leader>t  <Esc>:FloatermToggle<CR>
 tnoremap <silent><c-t>  <C-\><C-n>:FloatermToggle<CR>
 
