@@ -1,5 +1,5 @@
 " new terminal
-" nnoremap <silent><Leader>ft :FloatermNew <CR>
+nnoremap <silent><Leader>ft :FloatermNew <CR>
 " noremap! <silent><leader>ft  <Esc>:FloatermNew<CR>
 tnoremap <silent><c-f>  <C-\><C-n>:FloatermNew<CR>
 
