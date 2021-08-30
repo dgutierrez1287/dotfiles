@@ -120,3 +120,4 @@ source ~/.config/nvim/config/autopair.vim
 source ~/.config/nvim/config/snippets.vim
 source ~/.config/nvim/config/vim-terraform.vim
 source ~/.config/nvim/config/float-term.vim
+source ~/.config/nvim/config/git.vim
