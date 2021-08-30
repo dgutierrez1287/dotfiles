@@ -32,6 +32,10 @@ nnoremap <silent> <C-Left> :vertical resize -3<CR>
 nnoremap <silent> <C-Up> :resize +3<CR>
 nnoremap <silent> <C-Down> :resize -3<CR>
 
+" toggle highlight search
+map <silent> <leader>h :set hlsearch!<cr>
+nnoremap <silent> <esc> :noh<return><esc>
+
 " newline without insert
 nmap <C-o> O<Esc>j
 nmap <CR> o<Esc>k
