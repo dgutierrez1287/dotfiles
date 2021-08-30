@@ -62,6 +62,9 @@ Plug 'fhill2/telescope-ultisnips.nvim', {'branch': 'main'}
 Plug 'honza/vim-snippets'
 Plug 'cwood/ultisnips-terraform-snippets'
 
+" Terminal
+Plug 'voldikss/vim-floaterm'
+
 " file operations
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
