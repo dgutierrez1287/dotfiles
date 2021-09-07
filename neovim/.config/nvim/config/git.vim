@@ -18,5 +18,5 @@ let g:gitgutter_sign_modified_removed = '<'
 let g:gitgutter_override_sign_column_highlight = 1
 set updatetime=250
 nmap <Leader>gn <Plug>GitGutterNextHunk 
-nmap <Leader>gp <Plug>GitGutterPrevHunk
+nmap <Leader>gm <Plug>GitGutterPrevHunk
 
