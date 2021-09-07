@@ -6,6 +6,7 @@ nnoremap <silent> <leader>gs :Git status<CR>
 nnoremap <silent> <leader>gb :Git blame<CR>
 nnoremap <silent> <leader>ga :Git add %<CR><CR>
 nnoremap <silent> <leader>gc :Git commit<CR>
+nnoremap <silent> <leader>gp :Git push<CR>
 
 " Git Gutter
 let g:gitgutter_sign_added = '+'
