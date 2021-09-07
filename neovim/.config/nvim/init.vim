@@ -59,6 +59,7 @@ call plug#begin()
 Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall', { 'branch': 'main'}
 Plug 'hrsh7th/nvim-compe'
+Plug 'ray-x/lsp_signature.nvim'
 
 " Snippets
 Plug 'SirVer/ultisnips'

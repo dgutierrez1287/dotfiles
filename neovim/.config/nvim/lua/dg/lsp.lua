@@ -6,6 +6,14 @@ local function on_attach()
 
 end
 
+-- lsp signature help
+require 'lsp_signature'.setup({
+    bind = true,
+    handler_opts = {
+        border = "single"
+    }
+})
+
 -- typescript
 -- install --> :LspInstall typescript
 require'lspconfig'.tsserver.setup{ on_attach=on_attach }
