@@ -83,7 +83,7 @@ end
 -- uses telescope for interacting with git with some custom keymaps
 M.git_branches = function ()
     local opts = {}
-    
+
     opts.prompt_title = "Git Branches"
     opts.prompt_prefix = ">>"
 
