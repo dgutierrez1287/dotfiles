@@ -11,7 +11,7 @@ tnoremap <silent><c-t>  <C-\><C-n>:FloatermToggle<CR>
 " Next 
 " nnoremap  <silent><leader>tn  :FloatermNext<CR>
 " noremap! <silent><leader>tn  <Esc>:FloatermNext<CR>
-tnoremap <silent><c-n>  <C-\><C-n>:FloatermNext<CR>
+tnoremap <silent><c-o>  <C-\><C-n>:FloatermNext<CR>
 
 " Previous
 " nnoremap  <silent><leader>tp  :FloatermPrev<CR>
@@ -23,3 +23,5 @@ tnoremap <silent><c-p>  <C-\><C-n>:FloatermPrev<CR>
 " noremap! <silent><leader>tk  <Esc>:FloatermKill<CR>
 tnoremap <silent><c-k>  <C-\><C-n>:FloatermKill<CR>
 
+" Normal mode
+tnoremap <silent><c-n> <C-\><C-n>
