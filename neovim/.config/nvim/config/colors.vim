@@ -1,10 +1,24 @@
+" ##########  colors.vim  ##############
 
-let g:gruvbox_contrast_dark = 'hard'
-if exists('+termguicolors')
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-endif
-let g:gruvbox_invert_selection='0'
+lua <<EOF
+local material = require 'material'
+local colors = require 'material.colors'
 
-colorscheme gruvbox
-set background=dark
+material.setup({
+    lualine_style = "default",
+
+    custom_highlights = {
+        LineNr = { fg = '#FFFF00'},
+
+        YourHighlightGroup = {
+            fg = "#FFFF00",
+            bold = true,
+            -- underdot = true
+        }
+    }
+})
+
+EOF
+
+let g:material_style = "darker"
+colorscheme material

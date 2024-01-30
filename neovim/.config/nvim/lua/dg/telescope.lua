@@ -3,7 +3,6 @@ local utils = require("telescope.utils")
 
 require("telescope").load_extension("git_worktree")
 require("telescope").load_extension("fzy_native")
-require('telescope').load_extension('ultisnips')
 
 -- Helper functions --
 
@@ -110,4 +109,3 @@ end
 
 -- return external functions in lua table
 return M
-

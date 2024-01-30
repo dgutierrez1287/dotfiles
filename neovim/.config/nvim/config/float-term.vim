@@ -1,3 +1,6 @@
+" ############### float-term.vim #################
+
+
 " new terminal
 nnoremap <silent> <Leader>f :FloatermNew<CR>
 " noremap! <silent><leader>ft  <Esc>:FloatermNew<CR>

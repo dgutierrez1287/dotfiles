@@ -1,3 +1,6 @@
+" ################  tmux-nav.vim  ##############
+
+
 "lug 'christoomey/vim-tmux-navigator' Don't allow any default key-mappings.
 let g:tmux_navigator_no_mappings = 1
 "

@@ -1,3 +1,6 @@
+" ##############  git.vim  ###############
+
+
 " Git Fugitive
 
 nnoremap <silent> <Leader>gl :Git log<CR>
@@ -19,4 +22,3 @@ let g:gitgutter_override_sign_column_highlight = 1
 set updatetime=250
 nmap <Leader>gn <Plug>GitGutterNextHunk 
 nmap <Leader>gm <Plug>GitGutterPrevHunk
-

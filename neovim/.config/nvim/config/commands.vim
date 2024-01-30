@@ -1,3 +1,5 @@
+" ############  commands.vim  ################
+
 command! VT vsp | terminal 
 
 if has('nvim')
