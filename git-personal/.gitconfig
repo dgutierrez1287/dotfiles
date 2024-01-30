@@ -1,5 +1,20 @@
 [core]
-	fileMode = false
+    fileMode = false
 [user]
-  email = dgutierrez1287@gmail.com
-  name = Diego Gutierrez
+    email = dgutierrez1287@gmail.com
+    name = Diego Gutierrez
+[alias]
+    prettylog = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(r) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+    s = "status"
+    last = "log -1 HEAD"
+    cm = "commit -m"
+    bl = "branches"
+    br = "branch"
+    se = "!git rev-list"
+    pb = "push origin"
+    plb = "pull origin"
+    pm = "push origin master"
+    plm = "pull origin master"
+    a = "add"
+    aa = "add -A"
+  
