@@ -14,6 +14,12 @@ source ~/.zshrc-files/general.sh
 ## nvm
 source ~/.zshrc-files/nvm.sh
 
+## neovim
+source ~/.zshrc-files/neovim.sh
+
+# ssh config
+source ~/.zshrc-files/ssh.sh
+
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
