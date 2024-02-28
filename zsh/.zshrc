@@ -20,6 +20,8 @@ source ~/.zshrc-files/neovim.sh
 # ssh config
 source ~/.zshrc-files/ssh.sh
 
+# pyenv config
+source ~/.zshrc-files/pyenv.sh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
