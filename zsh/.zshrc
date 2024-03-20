@@ -11,9 +11,6 @@ fi
 ## general
 source ~/.zshrc-files/general.sh
 
-## nvm
-source ~/.zshrc-files/nvm.sh
-
 ## neovim
 source ~/.zshrc-files/neovim.sh
 
@@ -23,5 +20,13 @@ source ~/.zshrc-files/ssh.sh
 # pyenv config
 source ~/.zshrc-files/pyenv.sh
 
+# tfenv config
+source ~/.zshrc-files/tf_env.sh
+
+## nvm
+source ~/.zshrc-files/nvm.sh
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+
