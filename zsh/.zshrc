@@ -23,6 +23,9 @@ source ~/.zshrc-files/pyenv.sh
 # tfenv config
 source ~/.zshrc-files/tf_env.sh
 
+# pkenv config
+source ~/.zshrc-files/pkenv.sh
+
 ## nvm
 source ~/.zshrc-files/nvm.sh
 
