@@ -20,6 +20,9 @@ source ~/.zshrc-files/ssh.sh
 # pyenv config
 source ~/.zshrc-files/pyenv.sh
 
+# goenv config
+source ~/.zshrc-files/goenv.sh
+
 # tfenv config
 source ~/.zshrc-files/tf_env.sh
 
