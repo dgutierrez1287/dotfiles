@@ -46,6 +46,10 @@ Plug 'voldikss/vim-floaterm'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'kyazdani42/nvim-web-devicons'
 
+" Flutter Dev
+Plug 'akinsho/flutter-tools.nvim'
+Plug 'stevearc/dressing.nvim'
+
 " Look and Feel
 Plug 'glepnir/zephyr-nvim', { 'branch': 'main' }
 Plug 'marko-cerovac/material.nvim', { 'branch': 'main' }
@@ -75,6 +79,9 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'dimaportenko/telescope-simulators.nvim'
+Plug 'jonarrien/telescope-cmdline.nvim', { 'branch': 'main' }
+
 
 call plug#end()
 
@@ -88,6 +95,7 @@ source ~/.config/nvim/config/nvim-tree.vim
 source ~/.config/nvim/config/tree-sitter.vim
 source ~/.config/nvim/config/nvim-cmp-lsp.vim
 source ~/.config/nvim/config/glow.vim
+source ~/.config/nvim/config/flutter.vim
 source ~/.config/nvim/config/telescope.vim
 source ~/.config/nvim/config/tmux-nav.vim
 source ~/.config/nvim/config/undotree.vim
