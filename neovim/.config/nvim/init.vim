@@ -1,11 +1,12 @@
 " get correct homedir for mac and linux
-let home_dir = '/home/diego'
+let home_dir = $HOME
 
 if has('macunix') 
-    let home_dir = '/users/diego/'
+    let home_dir = $HOME
 endif
 
 " Node environment
+"
 let node_bin = '/.nvm/versions/node/v20.11.0/bin'
 let g:node_host_prog = home_dir + node_bin + '/node'
 
