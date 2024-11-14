@@ -20,5 +20,5 @@ material.setup({
 
 EOF
 
-let g:material_style = "darker"
+let g:material_style = "palenight"
 colorscheme material
