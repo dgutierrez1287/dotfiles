@@ -45,6 +45,14 @@ if [[ -n $feature_test ]]; then
 fi
 unset feature_test
 
+# kubernetes tooling
+feature_test=$(echo $enabled_features | grep "kube") 
+if [[ -n $feature_test ]]; then
+    echo "kubernetes tooling enabled"
+    source ~/.zshrc-files/kube.sh
+fi
+unset feature_test
+
 # mobile dev
 feature_test=$(echo $enabled_features | grep "mobile_dev")
 if [[ -n $feature_test ]]; then
