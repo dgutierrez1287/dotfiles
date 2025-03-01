@@ -60,6 +60,7 @@ Plug 'akinsho/bufferline.nvim', { 'branch': 'main' }
 " Language Stuff
 Plug 'hashivim/vim-terraform'
 Plug 'LnL7/vim-nix'
+Plug 'towolf/vim-helm'
 
 " Motion
 Plug 'christoomey/vim-tmux-navigator'

@@ -14,3 +14,8 @@ list-vars:
 zsh-install:
 	./scripts/zsh_setup.sh "${DRY_RUN}"
 
+crds-install:
+	/usr/bin/env bash ./scripts/crd_schema_getter.sh "get"
+
+crds-clean:
+	/usr/bin/env bash ./scripts/crds_schema_getter.sh "clean"

@@ -171,7 +171,57 @@ lspconfig.diagnosticls.setup{}
 
 
 -- yaml langauge
-lspconfig.yamlls.setup{}
+local schema_dir = vim.fn.expand("~/.crd-schemas/")
+local schemas = {}
+
+-- scan the schemas dir to get all crd schemas
+for _, file in ipairs(vim.fn.glob(schema_dir .. "*.json", false, true)) do
+  local filename = vim.fn.fnamemodify(file, ":t") -- get filename
+  schemas[file] = {
+    "helmfile.yaml",
+    "templates/*.yaml",
+    "templates/*.tpl",
+    "values.yaml"
+  } -- apply the schema
+end
+
+lspconfig.yamlls.setup{
+  on_attach = function(client, bufnr)
+    local filetype = vim.bo[bufnr].filetype
+    if filetype == "helm" then
+      vim.schedule(function() client.stop() end)
+    end
+  end,
+  settings = {
+    yaml = {
+      validate = true,
+      hover = true,
+      completion = true
+    }
+  },
+  filetypes = {"yaml", "helmfile"},
+}
+
+-- heml language
+lspconfig.helm_ls.setup {
+  settings = {
+    ['helm-ls'] = {
+      formatting = {
+        enable = true
+      },
+      yamlls = {
+        schemas = schemas, 
+        enable = true,
+        path = "yaml-language-server"
+      }
+    }
+  },
+  filetypes = {"helm"}
+}
+
+vim.cmd [[
+  autocmd BufRead,BufNewFile */templates/*.yaml,*/templates/*.tpl set filetype=helm
+]]
 
 -- java language 
 lspconfig.java_language_server.setup{}
