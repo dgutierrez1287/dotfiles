@@ -24,6 +24,10 @@ Plug 'hrsh7th/nvim-cmp', { 'branch': 'main' }
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'onsails/lspkind.nvim'
 
+" copilot
+"Plug 'zbirenbaum/copilot.lua', "{ 'on': ['Copilot','InsertEnter'] }
+"Plug 'zbirenbaum/copilot-cmp', "{ 'on': 'InsertEnter' }
+
 " json
 Plug 'gennaro-tedesco/nvim-jqx'
 
@@ -91,7 +95,8 @@ call plug#end()
 source ~/.config/nvim/config/general.vim
 source ~/.config/nvim/config/autopair.vim
 source ~/.config/nvim/config/commands.vim
-source ~/.config/nvim/config/float-term.vim
+source ~/.config/nvim/config/copilot.vim
+"source ~/.config/nvim/config/float-term.vim
 source ~/.config/nvim/config/git.vim
 source ~/.config/nvim/config/nvim-tree.vim
 source ~/.config/nvim/config/tree-sitter.vim

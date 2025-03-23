@@ -10,3 +10,6 @@ nnoremap <Leader>pl :lua require('telescope.builtin').live_grep()<CR>
 nnoremap <Leader>br :lua require('dg.telescope').git_branches()<CR>
 
 nnoremap <Leader>us :lua require'telescope'.extensions.ultisnips.ultisnips{}<CR>
+
+nnoremap <Leader>qf :lua require'dg.telescope'.qf_list()<CR>
+

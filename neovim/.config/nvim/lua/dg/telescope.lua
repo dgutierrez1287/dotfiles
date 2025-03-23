@@ -78,6 +78,14 @@ M.project_files = function ()
     end
 end
 
+-- quickfix list --
+-- uses telescope for interacting with quickfix list
+M.qf_list = function ()
+
+  require('telescope.builtin').diagnostics()
+  vim.diagnostic.setqflist()
+end
+
 -- git_branches --
 -- uses telescope for interacting with git with some custom keymaps
 M.git_branches = function ()
