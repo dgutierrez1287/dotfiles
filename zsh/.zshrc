@@ -6,6 +6,7 @@ source ~/.zshrc-files/oh_my_zsh.sh
 ## homebrew
 if [[ "$OSTYPE" == "Darwin" ]]; then
     source ~/.zshrc-files/homebrew.sh
+    source ~/.zshrc-files/docker-for-mac.sh
 fi
 
 enabled_features=$(cat ~/.tool_config.json | jq -r '.toolsEnabled')
